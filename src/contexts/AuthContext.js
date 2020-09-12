@@ -60,11 +60,6 @@ export function AuthProvider({ children }) {
       };
       setState(newState);
       localStorage.setItem("AuthState", JSON.stringify(newState));
-
-      // GET PATIENTS
-      // const { data } = await axios.get(
-      //   "https://e2a071939f16.ngrok.io/api/patients/getAllPatients/1"
-      // );
     } catch (error) {
       setState({
         ...state,

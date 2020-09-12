@@ -3,7 +3,7 @@ import { useAuth } from "../contexts/AuthContext";
 
 const mockedCredentials = {
   email: "matilde",
-  password: "matilde",
+  password: "matild",
 };
 
 function LoginScreen() {

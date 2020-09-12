@@ -1,8 +1,8 @@
 import React from "react";
 import "./App.css";
-import Counter from "./components/Counter/Counter";
 import { AuthProvider, useAuth } from "./contexts/AuthContext";
 import LoginScreen from "./screens/LoginScreen";
+import PatientsScreen from "./screens/PatientsScreen";
 
 function App() {
   const {
@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {authenticated ? <Counter /> : <LoginScreen />}
+        {authenticated ? <PatientsScreen /> : <LoginScreen />}
       </header>
     </div>
   );
